@@ -1,3 +1,7 @@
+// Nama : Ashabudinar Panji Samudra
+// NIM : 25520001
+// Prodi : Informatika
+
 // File: Main.java
 import java.util.Scanner;
 
