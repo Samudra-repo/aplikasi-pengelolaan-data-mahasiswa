@@ -1,4 +1,7 @@
 # Sistem Pengelolaan Data Mahasiswa (Singly Linked List)
+Nama : Ashabudinar Panji Samudra
+NIM : 25520001
+Prodi : Informatika
 
 Proyek ini merupakan implementasi struktur data **Singly Linked List** menggunakan bahasa pemrograman **Java** untuk mengelola data mahasiswa (NIM, Nama, IPK). Sistem dilengkapi dengan antarmuka CLI interaktif untuk mempermudah manipulasi data.
 
