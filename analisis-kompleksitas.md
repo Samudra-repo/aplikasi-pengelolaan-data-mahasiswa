@@ -25,7 +25,6 @@ Setiap node menyimpan data mahasiswa serta referensi menuju node berikutnya.
 | 2 | Mencari 25520001 | Data ditemukan | [DITEMUKAN] NIM: 25520001 \| Nama: Ashabudinar Panji Samudra \| IPK: 4.0 |
 | 3 | Menampilkan Daftar (Traversal) | Menampilkan seluruh daftar mahasiswa | Menampilkan daftar dengan NIM: 25520001, Nama: Ashabudinar Panji Samudra, IPK: 4.0 |
 | 4 | Menghapus 25520001 | Mahasiswa berhasil dihapus | [HAPUS] Mahasiswa 'Ashabudinar Panji Samudra (25520001)' berhasil dihapus. |
-| 5 | Keluar aplikasi (Menu 5) | Menampilkan pesan terima kasih dan keluar | Terima kasih telah menggunakan program ini! |
 
 ## 4. Kesimpulan
 
