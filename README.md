@@ -33,10 +33,10 @@ Pastikan Anda telah menginstal **Java Development Kit (JDK)** versi 8 atau yang 
 ### Langkah-langkah:
 1. Kompilasi program Java:
    ```bash
-   javac Main.java
+   javac main.java
    ```
 2. Jalankan program:
    ```bash
-   java Main
+   java main
    ```
 3. Ikuti petunjuk menu interaktif di layar terminal/konsol.
