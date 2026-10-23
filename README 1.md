@@ -4,7 +4,7 @@ Proyek ini merupakan implementasi struktur data **Singly Linked List** menggunak
 
 ---
 
-## 🛠️ Fitur Utama
+## Fitur Utama
 
 1. **Insert Data (Tambah Mahasiswa):** Menambahkan data mahasiswa baru ke awal linked list dengan validasi input dan pencegahan NIM duplikat.
 2. **Search Data (Cari Mahasiswa):** Mencari informasi mahasiswa berdasarkan NIM.
@@ -14,15 +14,15 @@ Proyek ini merupakan implementasi struktur data **Singly Linked List** menggunak
 
 ---
 
-## 📂 Struktur Berkas Proyek
+## Struktur Berkas Proyek
 
 - `Main.java`: Kode sumber Java yang berisi implementasi Node, LinkedList, dan Menu CLI Interaktif.
-- `pseudocode.md`: Dokumentasi algoritma dalam bentuk pseudocode bahasa Indonesia.
+- `pseudocode.md`: Dokumentasi algoritma dalam bentuk pseudocode.
 - `analisis-kompleksitas.md`: Dokumentasi analisis kompleksitas waktu (Big-O) dan ruang.
 
 ---
 
-## 🚀 Cara Menjalankan Program
+## Cara Menjalankan Program
 
 ### Prasyarat
 Pastikan Anda telah menginstal **Java Development Kit (JDK)** versi 8 atau yang lebih baru.
