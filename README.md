@@ -16,7 +16,7 @@ Proyek ini merupakan implementasi struktur data **Singly Linked List** menggunak
 
 ## Struktur Berkas Proyek
 
-- `Main.java`: Kode sumber Java yang berisi implementasi Node, LinkedList, dan Menu CLI Interaktif.
+- `main.java`: Kode sumber Java yang berisi implementasi Node, LinkedList, dan Menu CLI Interaktif.
 - `pseudocode.md`: Dokumentasi algoritma dalam bentuk pseudocode.
 - `analisis-kompleksitas.md`: Dokumentasi analisis kompleksitas waktu (Big-O) dan ruang.
 
