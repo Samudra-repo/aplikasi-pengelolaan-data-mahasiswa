@@ -1,33 +1,34 @@
-# Analisis Kompleksitas Algoritma (Big-O Notation)
+# Analisis Kompleksitas Algoritma
 
-Dokumen ini berisi analisis kompleksitas waktu (*Time Complexity*) dan kompleksitas ruang (*Space Complexity*) untuk operasi-operasi Singly Linked List pada pengelolaan Data Mahasiswa.
+## 1. Analisis Waktu
 
----
+| Operasi | Kompleksitas | Alasan |
+| :--- | :--- | :--- |
+| Insert di awal | O(1) | Mengubah referensi head tanpa penelusuran |
+| Search | O(n) | Memeriksa node satu per satu |
+| Delete berdasarkan NIM | O(n) | Mencari node sebelum menghapus |
+| Traversal | O(n) | Mengunjungi seluruh node |
 
-## Tabel Ringkasan Kompleksitas
+Catatan: Pada program ini, pengecekan NIM duplikat sebelum Insert membutuhkan O(n), sehingga keseluruhan proses penambahan melalui menu memiliki kompleksitas O(n).
 
-| Operasi Algoritma | Time Complexity (Waktu) | Space Complexity (Ruang) | Keterangan |
-| :--- | :---: | :---: | :--- |
-| **Insert (Tambah)** | $\mathcal{O}(n)$ | $\mathcal{O}(1)$ | Memerlukan validasi duplikasi NIM sebesar $\mathcal{O}(n)$, penambahan di `head` sebesar $\mathcal{O}(1)$. |
-| **Search (Cari)** | $\mathcal{O}(n)$ | $\mathcal{O}(1)$ | Melakukan iterasi linear dari `head` sampai menemukan NIM target atau `null`. |
-| **Delete (Hapus)** | $\mathcal{O}(n)$ | $\mathcal{O}(1)$ | Mencari letak node target terlebih dahulu lalu memutus dan menyambung pointer. |
-| **Traversal (Tampilkan)** | $\mathcal{O}(n)$ | $\mathcal{O}(1)$ | Mengunjungi seluruh $n$ node tepat satu kali untuk mencetak data. |
+## 2. Analisis Memori
 
----
+Linked List menggunakan memori O(n) untuk menyimpan n mahasiswa.
 
-## Detail Analisis Kasus (Case Analysis)
+Setiap node menyimpan data mahasiswa serta referensi menuju node berikutnya.
 
-### 1. Insert (Tambah Data Mahasiswa)
-* **Best Case — $\mathcal{O}(1)$:** Terjadi saat linked list masih dalam kondisi kosong (`head == null`), sehingga pengecekan duplikat langsung selesai.
-* **Worst Case — $\mathcal{O}(n)$:** Program harus mengecek seluruh $n$ node untuk memastikan NIM tidak duplikat sebelum menyisipkan node baru di `head`.
+## 3. Pengujian Program
 
-### 2. Search (Cari Data Mahasiswa)
-* **Best Case — $\mathcal{O}(1)$:** Data mahasiswa yang dicari berada di elemen pertama (`head`).
-* **Worst Case — $\mathcal{O}(n)$:** Data berada di posisi paling akhir (*tail*) atau NIM yang dicari tidak ada dalam daftar.
+| No. | Pengujian | Hasil yang diharapkan | Hasil aktual |
+| :---: | :--- | :--- | :--- |
+| 1 | Menambah 25520001 (Ashabudinar Panji Samudra, IPK: 4.00) | Mahasiswa berhasil ditambahkan | [BERHASIL] Mahasiswa 'Ashabudinar Panji Samudra (25520001)' berhasil ditambahkan. |
+| 2 | Mencari 25520001 | Data ditemukan | [DITEMUKAN] NIM: 25520001 \| Nama: Ashabudinar Panji Samudra \| IPK: 4.0 |
+| 3 | Menampilkan Daftar (Traversal) | Menampilkan seluruh daftar mahasiswa | Menampilkan daftar dengan NIM: 25520001, Nama: Ashabudinar Panji Samudra, IPK: 4.0 |
+| 4 | Menghapus 25520001 | Mahasiswa berhasil dihapus | [HAPUS] Mahasiswa 'Ashabudinar Panji Samudra (25520001)' berhasil dihapus. |
+| 5 | Keluar aplikasi (Menu 5) | Menampilkan pesan terima kasih dan keluar | Terima kasih telah menggunakan program ini! |
 
-### 3. Delete (Hapus Data Mahasiswa)
-* **Best Case — $\mathcal{O}(1)$:** Node yang akan dihapus berada di `head`.
-* **Worst Case — $\mathcal{O}(n)$:** Node yang akan dihapus berada di elemen paling akhir (*tail*) atau tidak ditemukan.
+## 4. Kesimpulan
 
-### 4. Space Complexity Total
-* **$\mathcal{O}(n)$:** Penggunaan alokasi memori dinamis bertambah seiring bertambahnya jumlah node $n$ mahasiswa di dalam linked list.
+1. Program Sistem Pengelolaan Data Mahasiswa berbasis Singly Linked List telah berhasil dibuat dan seluruh fungsi (Insert, Search, Delete, Traversal, serta Exit) berjalan dengan tepat sesuai hasil pengujian aktual.
+2. Penggunaan Singly Linked List terbukti sangat fleksibel dalam mengalokasikan memori dinamis O(n) secara efisien tanpa pembatasan ukuran awal seperti pada Array statis.
+3. Struktur data dan penanganan kondisi batas berjalan stabil tanpa terjadinya kesalahan runtime (NullPointerException).
