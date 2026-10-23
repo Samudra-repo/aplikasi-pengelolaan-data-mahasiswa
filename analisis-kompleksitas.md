@@ -4,7 +4,7 @@ Dokumen ini berisi analisis kompleksitas waktu (*Time Complexity*) dan kompleksi
 
 ---
 
-## 📊 Tabel Ringkasan Kompleksitas
+## Tabel Ringkasan Kompleksitas
 
 | Operasi Algoritma | Time Complexity (Waktu) | Space Complexity (Ruang) | Keterangan |
 | :--- | :---: | :---: | :--- |
@@ -15,7 +15,7 @@ Dokumen ini berisi analisis kompleksitas waktu (*Time Complexity*) dan kompleksi
 
 ---
 
-## 🔍 Detail Analisis Kasus (Case Analysis)
+## Detail Analisis Kasus (Case Analysis)
 
 ### 1. Insert (Tambah Data Mahasiswa)
 * **Best Case — $\mathcal{O}(1)$:** Terjadi saat linked list masih dalam kondisi kosong (`head == null`), sehingga pengecekan duplikat langsung selesai.
